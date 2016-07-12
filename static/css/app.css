@@ -1,0 +1,73 @@
+body {
+  background: transparent url(/img/grass.jpg) 0 0 repeat;
+}
+
+#carlos, #ball {
+  overflow: hidden;
+  background: transparent url(/img/sprite.png) no-repeat;
+  position: fixed;
+}
+
+#carlos {
+  width: 141px;
+  height: 170px;
+  background-position: -141px 0;
+  z-index: 4;
+  top: 0;
+}
+
+#carlos.flip {
+  background-position: 0 0;
+}
+
+#ball {
+  width: 70px;
+  height: 70px;
+  background-position: -282px 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+}
+
+#score {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.7);
+  left: 50%;
+  top: 20px;
+  margin-left: -167px;
+}
+
+.score-box,
+.divider {
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+.score-box {
+  padding: 30px 50px;
+}
+
+.score-box p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.score-box .total {
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+}
+
+.divider {
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 35px;
+}
+
+video {
+  position: fixed;
+  bottom: 0;
+}
